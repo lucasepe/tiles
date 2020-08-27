@@ -1,0 +1,38 @@
+# Nr. of Columns
+cols: 4
+# Nr. of Rows
+rows: 7
+# Tile size (Grid cell size)
+tile_size: 64
+# Canvas margin  (optional)
+margin: 16
+# Canvas watermark (optional)
+watermark: Draft
+# Canvas background color  (optional)
+bg_color: "#ffffff"
+# List of used tileset
+atlas_list:
+  - ../examples/aws_tileset.yml
+  - ../examples/links_tileset.yml
+# Tiles mapping (associate an index to each tile)
+mapping:
+  1: aws_lambda
+  2: aws_elastic_container_service
+  3: aws_api_gateway
+  4: aws_rds_mysql_instance
+  5: aws_simple_storage_service_s3
+  6: aws_elasticache_for_redis
+  10: link_vertical
+  11: link_vertical_arrow_up
+  20: link_cross_arrow_left_up_down
+  30: link_horizontal
+  40: link_tee_right_arrow_up_down
+# Static map layout
+layout: >
+  0,5,0,0
+  4,20,30,2
+  0,6,0,11
+  0,0,0,10
+  0,1,0,10
+  0,40,30,3
+  0,1,0,0,0
